@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black; /* Черный фон */
+    color: white; /* Белый текст */
+    display: flex;
+    justify-content: space-between; /* Распределяем контент */
+    align-items: center; /* Центрируем по вертикали */
+    padding: 30px; /* Отступы */
+    position: fixed; /* Фиксируем заголовок */
+    top: 0; /* Прикрепляем к верху */
+    left: 0; /* Прикрепляем к левому краю */
+    right: 0; /* Прикрепляем к правому краю */
+    z-index: 1000; /* Обеспечиваем, чтобы заголовок был поверх другого контента */
+}
+
+.logo {
+    margin-left: 30%; /* Отступ логотипа от левого края */
+}
+
+.logo a {
+    font-family: 'Verdana', sans-serif; /* Изменение шрифта логотипа */
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.menu {
+    margin-right: 30%; /* Отступ меню от правого края */
+}
+
+.menu a {
+    font-family: 'Roboto', sans-serif; /* Изменение шрифта для меню */
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative; /* Для позиционирования подчеркивания */
+    margin-left: 20px; /* Отступ между пунктами */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative; /* Необходимо для псевдоэлемента */
+}
+
+nav ul li .underline {
+    content: '';
+    display: block;
+    height: 2px; /* Высота подчеркивания */
+    background: white; /* Цвет подчеркивания */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Позиция подчеркивания ниже текста */
+    width: 0; /* Начальная ширина равна 0 */
+    transition: width 0.5s ease; /* Плавная анимация для ширины */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Минимальная высота для тела */
+}
+
+main {
+    margin-top: 90px; /* Увеличьте этот отступ, чтобы не перекрывать контент заголовка */
+    flex: 1; /* Занимает всё оставшееся пространство */
+}
+
+footer {
+    background-color: black; /* Полупрозрачный черный фон */
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Увеличиваем вертикальные отступы */
+    position: fixed; /* Фиксируем футер */
+    bottom: 0; /* Прикрепляем к низу окна */
+    left: 0; /* Выравниваем по левому краю */
+    right: 0; /* Выравниваем по правому краю */
+}
+
+.footer-content p {
+    margin: 0; /* Убираем отступы по умолчанию */
+}
+
+.footer-content a {
+    color: white; /* Цвет ссылки */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
