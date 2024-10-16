@@ -11,9 +11,20 @@
 <?php include 'header.php'; ?> <!-- Подключаем header -->
 
 <main>
-    <section>
-        <p>Это секция с текстом. Здесь можно разместить информацию о продукте или услуге.</p>
-        <img src="img/" alt="Пример изображения">
+    <section class="block" id="main">
+        <h2>Главная</h2>
+    </section>
+    <section class="block" id="why-us">
+        <h2>Почему мы</h2>
+    </section>
+    <section class="block" id="work-with">
+        <h2>С чем работаем</h2>
+    </section>
+    <section class="block" id="cases">
+        <h2>Кейсы</h2>
+    </section>
+    <section class="block" id="contacts">
+        <h2>Контакты</h2>
     </section>
 </main>
 

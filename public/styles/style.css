@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -83,12 +87,51 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Минимальная высота для тела */
+    min-height: 100vh;
 }
 
 main {
-    margin-top: 90px; /* Увеличьте этот отступ, чтобы не перекрывать контент заголовка */
+    margin-top: 89px; /* Увеличьте этот отступ, чтобы не перекрывать контент заголовка */
     flex: 1; /* Занимает всё оставшееся пространство */
+}
+
+.block {
+    height: 100vh; /* Высота каждого блока на весь экран */
+    display: flex; /* Центрируем контент */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    color: white; /* Цвет текста */
+    font-size: 2rem; /* Размер шрифта */
+}
+
+#main {
+    background-image: url('../img/city.webp'); /* Фоновое изображение для главной */
+    background-size: cover; /* Масштабируем изображение */
+    background-position: center; /* Центрируем изображение */
+}
+
+#why-us {
+    background-image: url('../img/whyus.webp'); /* Фоновое изображение для "Почему мы" */
+    background-size: cover;
+    background-position: center;
+}
+
+#work-with {
+    background-image: url('../img/work-with.webp'); /* Фоновое изображение для "С чем работаем" */
+    background-size: cover;
+    background-position: center;
+}
+
+#cases {
+    background-image: url('../img/cases.webp'); /* Фоновое изображение для "Кейсы" */
+    background-size: cover;
+    background-position: center;
+}
+
+#contacts {
+    background-image: url('../img/contacts.webp'); /* Фоновое изображение для "Контакты" */
+    background-size: cover;
+    background-position: center;
 }
 
 footer {
