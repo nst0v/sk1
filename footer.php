@@ -1,5 +1,5 @@
 <footer>
     <div class="footer-content">
-        <p>Все права защищены. Сайт разработал</p>
+        <p>Все права защищены.</p>
     </div>
 </footer>
