@@ -168,12 +168,12 @@ main {
 .seal-divider {
     position: relative;
     height: 0;
-    z-index: 10;
+    z-index: 2;
 }
 
 .seal-divider img {
     position: absolute;
-    left: 50%;
+    left: 75%;
     transform: translate(-50%, -50%);
     width: 350px;
     height: 350px;
@@ -385,6 +385,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 1000;
 }
 
 .footer-content p {
