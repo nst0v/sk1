@@ -330,6 +330,10 @@
         </div>
     </section>
 
+    <div class="seal-divider">
+        <img src="img/secret.png" alt="Secret">
+    </div>
+
 <section class="block" id="contacts">
     <div class="contacts-content">
         <div class="contacts-links">

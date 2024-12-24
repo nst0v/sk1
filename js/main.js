@@ -17,23 +17,6 @@ document.querySelectorAll('nav ul li a').forEach(link => {
         });
     });
 
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuBtn = document.querySelector('.menu-btn');
-        const menu = document.querySelector('.menu');
-        
-        menuBtn.addEventListener('click', function() {
-            menu.classList.toggle('active');
-        });
-        
-        // Close menu when clicking menu items
-        const menuItems = document.querySelectorAll('.menu a');
-        menuItems.forEach(item => {
-            item.addEventListener('click', () => {
-                menu.classList.remove('active');
-            });
-        });
-    });
-
 });
 document.addEventListener('DOMContentLoaded', function() {
     const swiper = new Swiper('.swiper', {
@@ -95,5 +78,17 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.menu-btn').addEventListener('click', function() {
         document.querySelector('.menu').classList.toggle('active');
         document.querySelector('.menu-btn').classList.toggle('active');
+    });
+});
+
+document.querySelector('.menu-btn').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.menu').classList.toggle('active');
+});
+
+document.querySelectorAll('.menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.menu-btn').classList.remove('active');
+        document.querySelector('.menu').classList.remove('active');
     });
 });

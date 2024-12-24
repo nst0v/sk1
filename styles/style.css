@@ -10,9 +10,10 @@ html, body {
     width: 100%;
 }
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 header {
@@ -30,16 +31,17 @@ header {
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 96px;
     line-height: 1.1;
     font-weight: 700;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
 }
 
 .subtitle {
-    font-size: 24px;
+    font-size: 32px;
     line-height: 1.4;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
     color: #666;
 }
 .logo {
@@ -201,7 +203,7 @@ main {
 
   #main h1 {
       font-family: 'Montserrat', sans-serif;
-      font-size: 56px;
+      font-size: 96px;
       font-weight: 700;
       margin-bottom: 20px;
       color: #ffffff;
@@ -210,7 +212,7 @@ main {
 
   #main .subtitle {
       font-family: 'Montserrat', sans-serif;
-      font-size: 24px;
+      font-size: 26px;
       margin-bottom: 40px;
       color: #ffffff;
       text-align: left;
@@ -219,15 +221,14 @@ main {
   .contact-button {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    gap: 8px;
+    gap: 12px;
     background: #000;
     color: #fff;
-    padding: 12px 24px;
+    padding: 16px 32px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 36px;
     transition: all 0.3s ease;
 }
 
@@ -609,25 +610,27 @@ main {
     }
     
     .contacts-content {
-        display: flex;
-        align-items: center;
-        gap: 0;
+        justify-content: center;
     }
     
     .contacts-links {
-        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
     
     .contacts-links h2 {
-        margin-bottom: 15px;
+        text-align: center;
+        margin-bottom: 20px;
     }
     
     .tg-link {
-        margin: 8px 0;
+        margin: 8px auto;
     }
     
     .contacts-image {
-        margin-left: -60px;
+        display: none;
     }
     
 }
