@@ -334,7 +334,8 @@
     <div class="contacts-content">
         <div class="contacts-links">
             <h2>Хочешь работать с нами?</h2>
-            <a href="https://t.me/+9N9SAQQk7Kw2MWQy" class="tg-link">ТГК:Market Traffic</a>
+            <p class="cases-subtitle">Переходи в Telegram канал Market Traffic или пиши нашему менеджеру:</p>
+            <a href="https://t.me/+9N9SAQQk7Kw2MWQy" class="tg-link"><img src="img/icons/icon-telegram.svg" alt="cross" class="stage-cross">ТГК:Market Traffic</a>
             <a href="https://t.me/mgr_MTraff" class="tg-link"><img src="img/icons/icon-manager.svg" alt="cross" class="stage-cross">Менеджер</a>
         </div>
         <div class="contacts-image">

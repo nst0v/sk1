@@ -585,13 +585,14 @@ main {
     display: inline-flex;
     font-size: 20px;
     gap: 8px;
+    justify-content: center;
     align-items: center;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
     padding: 12px 24px;
     border-radius: 50px;
-    background: #1E1E1E;
+    background: #4d4a4a;
     transition: all 0.3s ease;
     text-align: center;
     min-width: 250px;
