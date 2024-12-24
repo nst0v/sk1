@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-* {
     scroll-behavior: smooth;
 }
 
@@ -14,41 +11,39 @@ html, body {
     padding: 0;
 }
 
-header {
-    background-color: black; /* Черный фон */
-    color: white; /* Белый текст */
+body {
     display: flex;
-    justify-content: space-between; /* Распределяем контент */
-    align-items: center; /* Центрируем по вертикали */
-    padding: 30px; /* Отступы */
-    position: fixed; /* Фиксируем заголовок */
-    top: 0; /* Прикрепляем к верху */
-    left: 0; /* Прикрепляем к левому краю */
-    right: 0; /* Прикрепляем к правому краю */
-    z-index: 1000; /* Обеспечиваем, чтобы заголовок был поверх другого контента */
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 .logo {
-    margin-left: 30%; /* Отступ логотипа от левого края */
+    margin-left: 30%;
 }
 
 .logo a {
-    font-family: 'Verdana', sans-serif; /* Изменение шрифта логотипа */
+    font-family: 'Verdana', sans-serif;
     font-size: 24px;
     text-decoration: none;
     color: white;
 }
 
-
 .menu {
-    margin-right: 30%; /* Отступ меню от правого края */
-}
-
-.menu a {
-    font-family: 'Roboto', sans-serif; /* Изменение шрифта для меню */
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
+    margin-right: 30%;
 }
 
 nav ul {
@@ -59,102 +54,349 @@ nav ul {
 }
 
 nav ul li {
-    position: relative; /* Для позиционирования подчеркивания */
-    margin-left: 20px; /* Отступ между пунктами */
+    position: relative;
+    margin-left: 20px;
 }
 
 nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    position: relative; /* Необходимо для псевдоэлемента */
+    position: relative;
 }
 
 nav ul li .underline {
     content: '';
     display: block;
-    height: 2px; /* Высота подчеркивания */
-    background: white; /* Цвет подчеркивания */
+    height: 2px;
+    background: white;
     position: absolute;
     left: 0;
-    bottom: -5px; /* Позиция подчеркивания ниже текста */
-    width: 0; /* Начальная ширина равна 0 */
-    transition: width 0.5s ease; /* Плавная анимация для ширины */
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    bottom: -5px;
+    width: 0;
+    transition: width 0.5s ease;
 }
 
 main {
-    margin-top: 89px; /* Увеличьте этот отступ, чтобы не перекрывать контент заголовка */
-    flex: 1; /* Занимает всё оставшееся пространство */
+    margin-top: 89px;
+    flex: 1;
 }
 
 .block {
-    height: 100vh; /* Высота каждого блока на весь экран */
-    display: flex; /* Центрируем контент */
-    justify-content: center; /* Центрируем по горизонтали */
-    align-items: center; /* Центрируем по вертикали */
-    color: white; /* Цвет текста */
-    font-size: 2rem; /* Размер шрифта */
+    height: 100vh;
+    color: white;
+    font-size: 2rem;
 }
 
+/* Main Section */
 #main {
-    background-image: url('../img/city.webp'); /* Фоновое изображение для главной */
-    background-size: cover; /* Масштабируем изображение */
-    background-position: center; /* Центрируем изображение */
+    background-image: url('../img/background.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-start;
+    padding: 80px 0;
 }
 
+.main-content-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-content-block {
+    margin-left: 25%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+.main-content-block h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.main-content-block .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+#main h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: left;
+}
+
+#main .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 16px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.seal-divider {
+    position: relative;
+    height: 0;
+    z-index: 10;
+}
+
+.seal-divider img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 350px;
+}
+
+/* Why Us Section */
 #why-us {
-    background-image: url('../img/whyus.webp'); /* Фоновое изображение для "Почему мы" */
+    background-image: url('../img/sample.webp');
     background-size: cover;
     background-position: center;
+    text-align: center;
+    padding: 80px 0;
+    background-color: #000000;
 }
 
+#why-us h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.advantages-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.advantage-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.advantage-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 20px;
+    min-width: 40px;
+}
+
+.advantage-item p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: left;
+    margin: 0;
+}
+
+/* Work With Section */
 #work-with {
-    background-image: url('../img/work-with.webp'); /* Фоновое изображение для "С чем работаем" */
+    background-image: url('../img/sample.webp');
     background-size: cover;
     background-position: center;
+    padding: 80px 0;
+    text-align: center;
 }
 
+.work-with-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#work-with h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.work-with-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+}
+
+.category-item img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+}
+
+.category-item p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Cases Section */
 #cases {
-    background-image: url('../img/cases.webp'); /* Фоновое изображение для "Кейсы" */
+    background-image: url('../img/sample.webp');
     background-size: cover;
     background-position: center;
 }
 
+/* Stages Section */
+
+#stages {
+    background-image: url('../img/sample.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+}
+
+.stages-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#stages h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    color: #ffffff;
+    margin-bottom: 60px;
+}
+
+.stages-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.stage-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.stage-item:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.stage-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 15px;
+}
+
+.stage-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Contacts Section */
 #contacts {
-    background-image: url('../img/contacts.webp'); /* Фоновое изображение для "Контакты" */
+    background-image: url('../img/sample.webp');
     background-size: cover;
     background-position: center;
 }
 
+/* Footer */
 footer {
-    background-color: black; /* Полупрозрачный черный фон */
+    background-color: black;
     color: white;
     text-align: center;
-    padding: 20px 0; /* Увеличиваем вертикальные отступы */
-    position: fixed; /* Фиксируем футер */
-    bottom: 0; /* Прикрепляем к низу окна */
-    left: 0; /* Выравниваем по левому краю */
-    right: 0; /* Выравниваем по правому краю */
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .footer-content p {
-    margin: 0; /* Убираем отступы по умолчанию */
+    margin: 0;
 }
 
 .footer-content a {
-    color: white; /* Цвет ссылки */
-    text-decoration: none; /* Убираем подчеркивание */
+    color: white;
+    text-decoration: none;
 }
 
 .footer-content a:hover {
-    text-decoration: underline; /* Подчеркивание при наведении */
+    text-decoration: underline;
 }
 
