@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<?php include 'header.php'; ?> <!-- Подключаем header -->
+<?php include 'header.php'; ?>
 
 <main>
 
@@ -27,22 +27,33 @@
     </div>
 
     <section class="block" id="why-us">
-        <h2>Почему мы</h2>
+        <h2>Почему с нами?</h2>
         <div class="advantages-list">
-            <div class="advantage-item">
-                <span class="number">1</span>
+           <div class="advantage-item">
+                <span class="number">
+                    <img src="img/icons/icon-one.svg" alt="1">
+                </span>
                 <p>Реальные кейсы и рабочие связки</p>
             </div>
+
             <div class="advantage-item">
-                <span class="number">2</span>
+                <span class="number">
+                    <img src="img/icons/icon-two.svg" alt="2">
+                </span>
                 <p>Мы создали систему, в которой банов просто нет</p>
             </div>
+
             <div class="advantage-item">
-                <span class="number">3</span>
+                <span class="number">
+                    <img src="img/icons/icon-three.svg" alt="3">
+                </span>
                 <p>Сохранение вашей конфиденциальности - наш принцип</p>
             </div>
+
             <div class="advantage-item">
-                <span class="number">4</span>
+                <span class="number">
+                    <img src="img/icons/icon-four.svg" alt="4">
+                </span>
                 <p>Лидеры по цене за клиента и трафик</p>
             </div>
         </div>
@@ -139,7 +150,7 @@
     </section>
 </main>
 
-<?php include 'footer.php'; ?> <!-- Подключаем footer -->
+<?php include 'footer.php'; ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="js/main.js"></script>

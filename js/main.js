@@ -16,4 +16,21 @@ document.querySelectorAll('nav ul li a').forEach(link => {
             ease: "power2.inOut" // Плавность
         });
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
+        
+        menuBtn.addEventListener('click', function() {
+            menu.classList.toggle('active');
+        });
+        
+        // Close menu when clicking menu items
+        const menuItems = document.querySelectorAll('.menu a');
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                menu.classList.remove('active');
+            });
+        });
+    });
 });
